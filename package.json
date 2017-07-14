@@ -1,0 +1,26 @@
+{
+	"name": "faucet-pipeline-util",
+	"version": "0.8.0",
+	"author": "FND",
+	"contributors": [
+		"Lucas Dohmen <lucas.dohmen@innoq.com>"
+	],
+	"license": " Apache-2.0",
+	"homepage": "https://github.com/faucet-pipeline/faucet-pipeline-util",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/faucet-pipeline/faucet-pipeline-util"
+	},
+	"bugs": {
+		"url": "https://github.com/faucet-pipeline/faucet-pipeline-util/issues"
+	},
+	"main": "index.js",
+	"scripts": {
+		"test": "eslint --cache *.js && echo ✓"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^4.2.0",
+		"eslint-config-fnd": "^1.1.1"
+	}
+}
