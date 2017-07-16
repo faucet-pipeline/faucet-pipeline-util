@@ -3,11 +3,11 @@
 let path = require("path");
 let crypto = require("crypto");
 
-exports.generateFingerprint = (filename, contents) => {
-	let ext = "." + filename.split(".").pop(); // XXX: brittle; assumes regular file extension
-	let name = path.basename(filename, ext);
+exports.generateFingerprint = (filepath, contents) => {
+	let ext = "." + filepath.split(".").pop(); // XXX: brittle; assumes regular file extension
+	let name = path.basename(filepath, ext);
 	let hash = generateHash(contents);
-	return `${name}-${hash}${ext}`;
+	return path.join(path.dirname(filepath), `${name}-${hash}${ext}`);
 };
 
 function generateHash(str) {
