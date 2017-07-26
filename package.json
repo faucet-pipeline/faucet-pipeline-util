@@ -1,6 +1,6 @@
 {
 	"name": "faucet-pipeline-util",
-	"version": "0.10.0",
+	"version": "0.10.1",
 	"author": "FND",
 	"contributors": [
 		"Lucas Dohmen <lucas.dohmen@innoq.com>"
@@ -14,7 +14,7 @@
 	"bugs": {
 		"url": "https://github.com/faucet-pipeline/faucet-pipeline-util/issues"
 	},
-	"main": "src/index.js",
+	"main": "lib/index.js",
 	"scripts": {
 		"test": "eslint --cache *.js && echo ✓"
 	},
